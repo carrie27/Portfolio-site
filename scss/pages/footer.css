@@ -1,0 +1,56 @@
+.page-footer__left {
+  float: left;
+  line-height: 50px;
+}
+
+.page-footer__right {
+  float: right;
+  padding-top: 10px;
+}
+
+.social {
+  margin: 0;
+}
+
+.social__item {
+  padding-left: 5px;
+}
+
+a {
+  background-color: transparent;
+}
+
+.fb {
+  background: url(../image/icons/fb.png) no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  display: block;
+  width: 31px;
+  height: 30px;
+}
+
+.vk {
+  background: url(../image/icons/vk.png);
+  display: block;
+  width: 32px;
+  height: 30px;
+}
+
+.tw {
+  background: url(../image/icons/tw.png);
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.fb:hover {
+  background: url(../image/icons/fb-h.png);
+}
+
+a.vk:hover {
+  background: url(../image/icons/vk-h.png);
+}
+
+a.tw:hover {
+  background: url(../image/icons/tw-h.png);
+}

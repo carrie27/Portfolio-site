@@ -1,0 +1,22 @@
+$blue: #33c1e3;
+$red: #e85f61;
+$grey: #727272;
+
+
+
+@import '_misc/mixins.scss';
+@import '_misc/adjustment.scss';
+@import 'fonts.scss';
+
+//------- pages style
+
+@import 'pages/hello.scss';
+@import 'pages/header.scss';
+@import 'pages/about.scss';
+@import 'pages/career.scss';
+@import 'pages/portfolio.scss';
+@import 'pages/footer.scss';
+
+// ---------  adaptive
+
+

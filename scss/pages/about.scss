@@ -1,0 +1,160 @@
+.main-menu {
+	float: left;
+	width: rem(220px);
+	margin-right: rem(20px);
+	box-sizing: border-box;
+	@include tablet {
+		width: 100%;
+		float: none;
+		margin-bottom: rem(40px);
+	}
+}
+.main-menu__item {
+	font-size: rem(18px);
+	text-align: right;
+	border-right: 5px solid transparent;
+	padding: rem(10px) rem(20px) rem(10px) 0;
+	@include tablet {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		border: none;
+		padding: 0 1.24rem 0 0;
+	}
+	@include phone {
+		padding: 0 .625rem 0 0;
+	}
+}
+.main-menu__item_active {
+	padding: rem(10px) rem(20px) rem(10px) 0;
+	text-align: right;
+	font-size: rem(18px);
+	border-right: 5px solid #33c1e3;
+	@include tablet {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		border: none;
+		padding: 0 1.24rem 0 0;
+	}
+	@include phone {
+		padding: 0 .625rem 0 0;
+	}
+}
+.main-menu__item_active .main-menu__link {
+	color: $blue;
+	font-weight: 700;
+}
+.fa {
+	padding-right: rem(10px);
+}
+.main-menu__item a {
+	color: $grey;
+}
+.main-menu__link {
+	& .fa {
+		@include phone {
+			display: none;
+		}
+	}
+}
+.main-menu__link:hover {
+	color: $blue;
+}
+.page-content {
+	width: rem(700px);
+	float: right;
+	@extend %clearfix;
+	@include laptop {
+		width: 71%;
+	}
+	@include tablet {
+		float: none;
+		width: 100%;
+	}
+}
+.about {
+	margin-bottom: rem(15px);
+	@extend %clearfix;
+}
+.about__left {
+	float: left;
+	width: rem(300px);
+	text-align: center;
+	@include phone {
+		float: none;
+		width: 100%;
+	}
+}
+.about__pic {
+	overflow: hidden;
+	border: 5px solid #fff;
+	@include border-radius(50%);
+	display: inline-block;
+	width: rem(220px);
+	height: rem(220px);
+	@include laptop {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+.about__photo {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+}
+.about__right{
+	float: right;
+	width: 54%;
+	@include phone {
+		float: none;
+		width: 100%;
+	}
+}
+
+.about__text {
+	height: 19.375rem;
+	font-size: rem(18px);
+	font-weight: 300;
+	color: $grey;
+	overflow: hidden;
+	margin-bottom: rem(35px);
+	padding-right: 0.1875rem;
+	@include phone {
+		height: auto;
+
+	}
+}
+.heading {
+	margin: 0 0 rem(20px);
+	font-weight: 500;
+	font-size: rem(35px);
+	color: #414141;
+	@include phone {
+		text-align: center;
+	}
+}
+.about-btn {
+	text-align: right;
+	@extend %clearfix;
+	@include tablet {
+		padding-right: 1.25rem;
+	}
+	@include phone {
+		text-align: center;
+	}
+}
+.download-btn {
+	text-decoration: none;
+	color: $red;
+	font-weight: 700;
+	font-size: rem(14px);
+	padding: rem(10px) rem(16px);
+	border: 2px solid $red;
+	@include border-radius(30px);
+}
+.download-btn:hover {
+	background-color: $red;
+	color: #fff;
+}
+

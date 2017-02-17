@@ -1,0 +1,50 @@
+%inline-block {
+	display: inline-block;
+}
+
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+     -moz-border-radius: $value;
+      -ms-border-radius: $value;
+          border-radius: $value;
+}
+@mixin transition($value...) {
+	-webkit-transition: $value;
+     -moz-transition: $value;
+      -ms-transition: $value;
+          transition: $value;
+}
+
+/* adaptiv	*/
+
+@function rem($px) {
+	@return $px / 16px + 0rem;
+}
+
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin phone {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}

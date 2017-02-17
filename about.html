@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Обо мне</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  	<meta name="viewport" content="width=device-width">
+  	
+	<link rel="stylesheet" href="scss/main.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="maincontent">
+			<header class="page-header">
+				<div class="container">
+					<div class="page-header__title">
+			            <img src="image/decor/myPhoto-sm.jpg" alt="мое фото" class="title-img">
+			            <span class="title-text">Ирина Казанова</span>
+          			</div>
+
+	          		<div class="page-header__contact">
+	          			<div class="contacts">
+		            		<a href="#" class="contacts__link">
+		            			<i class="fa fa-phone" aria-hidden="true"></i><span class="contacts__text">Мои контакты</span>
+		            		</a>
+	        
+			            	<div class="contact-hov">
+			            		<ul class="contact-hov-list">
+			            			<li class="contact-hov__item">
+			            				<a href="mailto:carrie2703@yandex.ru" class="contact-hov__link mail"><i class="fa fa-envelope" aria-hidden="true"></i>carrie2703@yandex.ru</a>
+			            			</li>
+			            			<li class="contact-hov__item">
+			            				<a href="" class="contact-hov__link tel"><i class="fa fa-phone" aria-hidden="true"></i>+7 911 293 85 59</a>
+			            			</li>
+			            			<li class="contact-hov__item">
+			            				<a href="" class="contact-hov__link skype"><i class="fa fa-skype" aria-hidden="true"></i>irysenbka</a>
+			            			</li>
+			            		</ul>	
+		            		</div>
+						</div>
+          			</div>
+     			</div>
+			</header>
+
+			<div class="content">
+				<div class="container">
+					<aside class="main-menu">
+						 <ul class="main-menu__list">
+			             	<li class="main-menu__item_active">
+			             		<a href="http://cf45575.tmweb.ru/about.html" class="main-menu__link"><i class="fa fa-user-secret" aria-hidden="true"></i>Обо мне</a>
+			             	</li>
+			             	<li class="main-menu__item">
+			             		<a href="http://cf45575.tmweb.ru/career.html" class="main-menu__link"><i class="fa fa-rocket" aria-hidden="true"></i>Карьерный путь</a></li>
+			             	<li class="main-menu__item">
+			             		<a href="http://cf45575.tmweb.ru/portfolio.html" class="main-menu__link"><i class="fa fa-briefcase" aria-hidden="true"></i>Портфолио</a></li>
+            			 </ul>	
+					</aside>
+					<main class="page-content">
+						<div class="about">
+							<div class="about__left">
+								<div class="about__pic">
+									<img class="about__photo" src="image/decor/myPhoto.jpg" alt="Мое фото">
+								</div>
+							</div>
+							<div class="about__right">
+								<h1 class="heading">Обо мне</h1>
+								<div class="about__text">
+									
+											<p class="about__text-desc">Привет! Меня зовут Ирина.</p>
+											<p class="about__text-desc">Верстаю сайты около двух лет. Занимаюсь как лендингами, так и многостраничными сайтами. Владею следующим стеком технологий: HTML5, CSS3, SCSS, JavaScript/jQuery, сборщик проектов Gulp, система контроля версий Git. Верстаю семантично, модульно, адаптивно (Bootstrap, media queries), pixel perfect. Умею работать с API карт Яндекс, Google. </p>
+											<p class="about__text-desc">Примеры моих работ вы можете увидеть в разделе "Портфолио".</p>
+								            <p class="about__text-desc">Постоянно совершенствую свои знания, изучаю новое, т.к фронтенд для меня это не просто увлечение, а сфера, в которой я хочу развиваться и расти как специалист. </p>
+								         
+								</div>
+								<div class="about-btn">
+                  			<a class="download-btn" href="#"><i class="fa fa-download" aria-hidden="true"></i>Скачать резюме</a>
+                		</div>
+
+							</div>
+						</div>	
+	
+						
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="page-footer__left">
+				<div class="page-footer__copyright">&copy;Дизайн сайта был разработан в школе LoftSchool</div>
+			</div>
+			<div class="page-footer__right">
+				<ul class="social">
+					<li class="social__item">
+						<a href="https://ru-ru.facebook.com" class="social__link fb"></a>
+					</li>
+					<li class="social__item">
+						<a href="https://vk.com" class="social__link vk"></a>
+					</li>
+					<li class="social__item">
+						<a href="https://twitter.com" class="social__link tw"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".about__text").mCustomScrollbar();
+        });
+    })(jQuery);
+	</script>
+			
+</body>
+</html>
+

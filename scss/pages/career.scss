@@ -1,0 +1,117 @@
+.page-content {
+	width: rem(700px);
+	float: right;
+	@extend %clearfix;
+	@include tablet {
+		float: none;
+		width: 100%;
+	}
+}
+.career__left {
+	float: left;
+	width: rem(220px);
+	@include phone {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-bottom: .625rem;
+	}
+}
+.career__right {
+	float: right;
+	width: rem(460px);
+	@include phone {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+.career__item {
+	margin-bottom: rem(20px);
+	cursor: pointer;
+	text-align: right;
+	@include phone {
+		text-align: center;
+	}
+}
+.career__block {
+	width: rem(360px);
+	background-color: #fff;
+    @include border-radius(10px);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding-top: rem(15px);
+    padding-left: rem(20px);
+    padding-bottom: rem(15px);
+}	
+.career__block:before, .career__block:after {
+	content: "";
+	display: block;
+	width: 1px;
+	background: #ddd;
+	position: absolute;
+	left: rem(-20px);
+}
+.career__block:before {
+	top: 0;
+	bottom: 50%;
+	margin-bottom: rem(10px);
+}
+.career__block:after {
+	top: 50%;
+	bottom: rem(-22px);
+	margin-top: rem(10px);
+}
+.career__item:first-child .career__block:before {
+	display: none;
+}
+.career__item:last-child .career__block:after {
+	display: none;
+}
+.career__year {
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	// line-height: rem(30px);
+	margin-top: rem(-15px);
+	margin-right: rem(35px);
+}
+.career__year:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	@include border-radius(50%);
+	background: $blue;
+	position: absolute;
+	right: rem(-21px);
+	top: 50%;
+	margin-top: rem(-5px);
+	z-index: 1;
+}
+.career__title {
+	font-weight: 400;
+	font-size: rem(21px);
+}
+.career__occ, .career__title {
+	margin-bottom: rem(5px);
+}
+.career__occ, .career__date, .career__year {
+	font-weight: 300;
+	font-size: rem(18px);
+}
+.career__item:hover .career__block {
+	background-color: $blue;
+	color: #fff;
+}
+.career__item:hover .career__year {
+ 	font-weight: 700;
+ 	font-size: rem(18px);
+ 	color: $blue;
+ }
+.career__item:hover .career__year:after {
+	border: 4px solid #94e0f2;
+	top: rem(10px);
+	left: rem(44px);
+}
